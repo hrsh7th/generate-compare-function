@@ -2,11 +2,28 @@
 generate compare function by object paths.
 
 # Note
-I created this package.
-I hope `generate-compare-function` is faster than `select with shallow-equals`.
-But real results is no my hopeness 😭.
+-I created this package.-
 
-So we dont need this package.
+-I hope `generate-compare-function` is faster than `select with shallow-equals`.-
+
+-But real results is no my hopeness 😭.-
+
+-So we dont need this package.-
+
+Sorry, my benchmark script had bug.
+I solved this bug, so that made my hoped results.
+this package is maybe useful someone!
+
+```bash
+$ npm run perf
+
+> generate-compare-function@0.0.0 perf /path/to/generate-compare-function
+> ts-node ./perf/perf.ts
+
+generate-compare-function x 211,816,366 ops/sec ±1.49% (90 runs sampled)
+select function with shallow equals. x 9,756,988 ops/sec ±0.91% (92 runs sampled)
+Fastest is generate-compare-function
+```
 
 # Usage
 

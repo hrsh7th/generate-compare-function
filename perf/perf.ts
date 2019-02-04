@@ -43,7 +43,7 @@ const state2: State = {
   value9: 1
 };
 
-suite.add('generate-compare-function', () => {
+suite.add('generate-compare-function', (() => {
   const compare = generateCompareFunction([
     ['value0'],
     ['value1'],
@@ -59,9 +59,9 @@ suite.add('generate-compare-function', () => {
   return () => {
     compare(state1, state2);
   };
-});
+})());
 
-suite.add('select function with shallow equals.', () => {
+suite.add('select function with shallow equals.', (() => {
   const select = (state: State) => {
     return {
       value0: state.value0,
@@ -79,7 +79,7 @@ suite.add('select function with shallow equals.', () => {
   return () => {
     shallowequal(select(state1), select(state2));
   };
-});
+})());
 
 suite.on('cycle', function(event: any) {
   console.log(String(event.target));
