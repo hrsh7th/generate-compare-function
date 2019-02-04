@@ -1,6 +1,6 @@
 {
   "name": "generate-compare-function",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "generate compare function by object paths.",
   "main": "lib/cjs/generate-compare-function.js",
   "module": "lib/esm/generate-compare-function.js",
