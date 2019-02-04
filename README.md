@@ -2,13 +2,13 @@
 generate compare function by object paths.
 
 # Note
--I created this package.-
+~~I created this package.~~
 
--I hope `generate-compare-function` is faster than `select with shallow-equals`.-
+~~I hope `generate-compare-function` is faster than `select with shallow-equals~~
 
--But real results is no my hopeness 😭.-
+~~But real results is no my hopeness 😭~~
 
--So we dont need this package.-
+~~So we dont need this package~~
 
 Sorry, my benchmark script had bug.
 I solved this bug, so that made my hoped results.
