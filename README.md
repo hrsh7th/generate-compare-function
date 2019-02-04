@@ -11,7 +11,9 @@ generate compare function by object paths.
 ~~So we dont need this package~~
 
 Sorry, my benchmark script had bug.
+
 I solved this bug, so that made my hoped results.
+
 this package is maybe useful someone!
 
 ```bash
