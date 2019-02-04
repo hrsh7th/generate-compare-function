@@ -2,13 +2,33 @@
   "name": "generate-compare-function",
   "version": "0.0.0",
   "description": "generate compare function by object paths.",
-  "main": "index.js",
+  "main": "lib/cjs/generate-compare-function.js",
+  "module": "lib/esm/generate-compare-function.js",
+  "typings": "lib/esm/generate-compare-function.d.ts",
   "scripts": {
     "test": "jest --config jest.config.json",
-    "perf": "ts-node ./perf/perf.ts"
+    "perf": "ts-node ./perf/perf.ts",
+    "build": "run-p build:*",
+    "build:cjs": "tsc --outDir lib/cjs",
+    "build:esm": "tsc --outDir lib/esm --module esnext",
+    "release": "np"
   },
-  "author": "hrsh7th",
+  "files": [
+    "lib"
+  ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrsh7th/generate-compare-function.git"
+  },
+  "keywords": [
+    "generate-function",
+    "compare",
+    "deep-equals",
+    "deep-equal",
+    "equals"
+  ],
+  "author": "hrsh7th",
   "devDependencies": {
     "@types/benchmark": "^1.0.31",
     "@types/jest": "^23.3.13",
@@ -18,6 +38,7 @@
     "immer": "^2.0.0",
     "jest": "^24.0.0",
     "np": "^4.0.2",
+    "npm-run-all": "^4.1.5",
     "shallowequal": "^1.1.0",
     "ts-jest": "^23.10.5",
     "ts-node": "^8.0.2",
